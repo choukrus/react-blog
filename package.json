@@ -2,18 +2,24 @@
   "name": "boiler",
   "version": "1.0.0",
   "description": "blog",
-  "main": "index.js",
+  "main": "server/index.js",
+  "engine": {
+    "node": "12.10.0",
+    "npm":  "6.13.0"
+  },
   "scripts": {
-    "start": "node index.js",
-    "backend": "nodemon index.js"
-
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.8",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
-    "mongoose": "^5.8.11"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.11",
+    "mongoose-schema": "0.0.7"
   }
 }
